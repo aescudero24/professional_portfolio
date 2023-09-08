@@ -1,3 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.html,
+.body {
+  background-color: darkgray;
+}
+
+.header {
+  background-color: black;
+  padding: 10px;
+  padding-bottom: 60px;
+}
+
 .menuButton {
   background-color: transparent;
   color: white;
@@ -8,8 +25,8 @@
 
 .dropdown {
   position: fixed;
-  top: 5px;
-  left: 5px;
+  top: 0;
+  left: 0;
   display: inline-block;
 }
 
@@ -44,14 +61,24 @@
 .menu {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: red;
   margin: 6px 0;
 }
 
+#home {
+  height: 300px;
+  background-image: url(https://t4.ftcdn.net/jpg/04/26/28/29/360_F_426282929_pVtLAOxysXQS9YS2hTVFFm4OVbCTKztz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .name {
-  font-size: 32pt;
+  color: transparent;
+  font-size: 55pt;
   font-family: sans-serif;
   text-align: center;
+  padding-top: 6.5%;
+  -webkit-text-stroke: 2px white;
 }
 
 .hori {
@@ -59,9 +86,46 @@
   border-radius: 7px;
 }
 
-.meself {
+.topic {
+  margin-top: 90px;
+  margin-left: 80px;
+  font-size: 25pt;
+  font-family: sans-serif;
+}
+
+.description {
+  font-size: 18pt;
+  font-family: sans-serif;
+  text-align: justify;
+  width: 90%;
+  border-left: 2px solid red;
+  margin-top: 20px;
+  margin-left: 80px;
+  padding-left: 50px;
+}
+
+/* .meself {
   width: 400px;
   height: auto;
   float: right;
   border: 2px solid black;
+} */
+
+.footer {
+  background-color: black;
+  margin-top: 50px;
+  padding: 10px;
+  padding-bottom: 60px;
+}
+
+#about {
+  height: 300px;
+}
+
+#skills {
+  height: 300px;
+}
+
+#projects {
+  height: 300px;
 }
