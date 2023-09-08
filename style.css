@@ -104,13 +104,6 @@
   padding-left: 50px;
 }
 
-/* .meself {
-  width: 400px;
-  height: auto;
-  float: right;
-  border: 2px solid black;
-} */
-
 .footer {
   background-color: black;
   margin-top: 50px;
@@ -139,6 +132,15 @@
   height: auto;
 }
 
+.image:hover {
+  cursor: pointer;
+}
+
+.image:active {
+  transform: scale(0.97);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
 .projectsTable {
   margin-top: 30px;
   width: 700px;
@@ -148,4 +150,38 @@
   width: 100px;
   height: auto;
   border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-bottom: 20px;
+  }
+
+  .menuButton {
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 40pt;
+    padding-top: 4%;
+  }
+
+  .description {
+    border-left: 1px solid red;
+    margin-left: 0;
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .projectsTable {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+.footer {
+  padding-bottom: 20px;
 }
