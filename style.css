@@ -145,7 +145,7 @@
 }
 
 .projectImage {
-  width: 200px;
+  width: 100px;
   height: auto;
-  border: 2px solid black;
+  border: 1px solid black;
 }
