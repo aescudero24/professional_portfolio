@@ -129,3 +129,17 @@
 #projects {
   height: 300px;
 }
+
+.table {
+  margin-top: 82px;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+}
+
+.projectsTable {
+  margin-top: 30px;
+  width: 700px;
+}
