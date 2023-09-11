@@ -81,11 +81,6 @@
   -webkit-text-stroke: 2px white;
 }
 
-.hori {
-  border: 2px solid black;
-  border-radius: 7px;
-}
-
 .topic {
   margin-top: 90px;
   margin-left: 80px;
@@ -190,5 +185,23 @@
   .projectImage {
     display: block;
     margin: 0 auto;
+  }
+
+  .header,
+  .menuButton,
+  .name,
+  .topic,
+  .description,
+  .footer {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .projectsTable {
+    width: 100%;
+    margin: 0;
   }
 }
