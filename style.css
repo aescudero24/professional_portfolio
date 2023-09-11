@@ -152,36 +152,57 @@
   border: 1px solid black;
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
+  /* Header styles for smaller screens */
   .header {
-    padding-bottom: 20px;
+    padding-bottom: 20px; /* Reduce vertical padding */
   }
 
+  /* Menu button styles for smaller screens */
   .menuButton {
-    padding: 10px;
+    padding: 10px; /* Adjust button padding */
   }
 
+  /* Name text styles for smaller screens */
   .name {
-    font-size: 40pt;
-    padding-top: 4%;
+    font-size: 32pt; /* Decrease font size */
+    padding-top: 3%; /* Adjust padding for centering */
+  }
+
+  /* Topic and description styles for smaller screens */
+  .topic {
+    margin-top: 40px; /* Adjust top margin */
+    font-size: 20pt; /* Decrease font size */
+    margin-left: 20px; /* Adjust left margin */
   }
 
   .description {
-    border-left: 1px solid red;
-    margin-left: 0;
+    font-size: 16pt; /* Decrease font size */
+    margin-top: 10px; /* Adjust top margin */
+    margin-left: 20px; /* Adjust left margin */
+    padding-left: 20px; /* Adjust left padding */
   }
 
+  /* Footer styles for smaller screens */
+  .footer {
+    padding-bottom: 20px; /* Reduce vertical padding */
+  }
+  /* Make images responsive */
   .image {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain the aspect ratio */
   }
 
+  /* Adjust the width of the projects table for smaller screens */
   .projectsTable {
-    width: 90%;
-    margin-left: 5%;
+    width: 90%; /* Adjust table width for better fit on mobile */
+    margin-left: 5%; /* Center the table */
   }
-}
 
-.footer {
-  padding-bottom: 20px;
+  /* Center the project images on mobile screens */
+  .projectImage {
+    display: block;
+    margin: 0 auto;
+  }
 }
