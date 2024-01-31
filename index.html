@@ -1,125 +1,242 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Professional Portfolio</title>
+    <title>Adrian Escudero Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="new_script.js"></script>
   </head>
   <body>
-    <header class="header"></header>
-    <div class="dropdown">
-      <button class="menuButton">
-        <div class="menu"></div>
-        <div class="menu"></div>
-        <div class="menu"></div>
-      </button>
-      <div class="dropdown-content">
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">My Skills</a>
-        <a href="#projects">My Projects</a>
-      </div>
-    </div>
-    <button id="dark_light" value="Dark Mode"></button>
-    <div id="wrapper">
-      <div id="home"><h1 class="name">Adrian Escudero</h1></div>
-      <div id="about">
-        <h1 class="topic">About Me:</h1>
-        <p class="description">
-          My name is Adrian Manuel Escudero. I was born in Cambellsville,
-          Kentucky but moved to Mississippi. I graduated as valedictorian from
-          Delta Streets Academy in Greenwood, Mississippi and am now 18 years
-          old. I currently attend Base Camp Coding Academy, a non-profit
-          organization in which the students have earned a full scholarship.
-          BCCA teaches 7 different coding languages and frameworks in 11 months.
-          This portfolio is actually a project I'm creating.
-        </p>
-      </div>
-      <br />
-      <div id="skills">
-        <h1 class="topic">My Skills:</h1>
-        <p class="description">
-          I have prior and current experience in coding. The languages I've
-          worked in include: C, C#, C++, HTML, CSS, Javascript, Python, SQL,
-          Java, Spring, Django, and probably more.
-        </p>
-        <div class="table">
-          <center>
-            <table>
-              <tr>
-                <td><img class="image" src="images/c-sharp.png" /></td>
-                <td><img class="image" src="images/c-.png" /></td>
-                <td><img class="image" src="images/html-5.png" /></td>
-                <td><img class="image" src="images/css-3.png" /></td>
-                <td><img class="image" src="images/java-script.png" /></td>
-                <td><img class="image" src="images/python.png" /></td>
-                <td><img class="image" src="images/sql-server.png" /></td>
-                <td><img class="image" src="images/java.png" /></td>
-                <td><img class="image" src="images/spring.png" /></td>
-                <td><img class="image" src="images/django.png" /></td>
-              </tr>
-            </table>
-          </center>
+    <nav id="home" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#home">AE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div id="projects">
-        <h1 class="topic">My Projects:</h1>
-        <p class="description">
-          During Base Camp, I have done all of my Projects in Python, but having
-          started this HTML and CSS unit, I'd like to show off some of the
-          things I've done.
-        </p>
-        <center>
-          <table class="projectsTable">
-            <thead>
-              <th colspan="2">Past Projects:</th>
-              <th colspan="2">Current Projects:</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td colspan="1">
-                  <a href="https://replit.com/@dsa2223105/CLOCK" target="_blank"
-                    ><img
-                      class="projectImage"
-                      src="images/Screenshot 2023-09-08 at 2.55.31 PM.png"
-                  /></a>
-                </td>
-                <td colspan="1">
-                  <a
-                    href="https://replit.com/@dsa2223105/A-Simple-Calculator"
-                    target="_blank"
-                    ><img
-                      class="projectImage"
-                      src="images/Screenshot 2023-09-08 at 3.01.08 PM.png"
-                  /></a>
-                </td>
-                <td colspan="1">
-                  <a
-                    href="https://aescudero24.github.io/copycat/"
-                    target="_blank"
-                    ><img
-                      class="projectImage"
-                      src="images/Screenshot 2023-09-08 at 3.06.18 PM.png"
-                  /></a>
-                </td>
-                <td colspan="1">
-                  <a
-                    href="https://aescudero24.github.io/fictional_charity/"
-                    target="_blank"
-                    ><img
-                      class="projectImage"
-                      src="images/Screenshot 2023-09-08 at 3.08.27 PM.png"
-                  /></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </center>
+    </nav>
+    <div id="main" class="text-center">
+      <div class="container-fluid">
+        <h1 class="name display-4">Adrian Escudero</h1>
       </div>
     </div>
-    <div class="brake"></div>
-    <footer class="footer"></footer>
-    <script src="script.js"></script>
+    <div id="me" class="container-fluid bg-3 text-center">
+      <h3 class="heading">About Me</h3>
+      <br />
+      <div class="row">
+        <div class="col-sm">
+          <p class="text">
+            My name is Adrian Manuel Escudero. I was born in Campbellsville,
+            Kentucky but moved to Mississippi. I graduated as valedictorian from
+            Delta Streets Academy in Greenwood, Mississippi and am now 18 years
+            old. I currently attend Base Camp Coding Academy, a non-profit
+            organization in which the students have earned a full scholarship.
+            BCCA teaches 7 different coding languages and frameworks in 11
+            months.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="skills" class="container-fluid bg-3 text-center">
+      <h3 class="heading">My Skills</h3>
+      <br />
+      <p class="text">
+        Including prior experience, I have worked in these languages and
+        frameworks:
+      </p>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <img class="img-fluid" src="images/c-sharp.png" alt="C#" />
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <img class="img-fluid" src="images/c-.png" alt="C++" />
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <img class="img-fluid" src="images/html-5.png" alt="HTML5" />
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <img class="img-fluid" src="images/css-3.png" alt="CSS3" />
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <img
+              class="img-fluid"
+              src="images/javascript2.png"
+              alt="JavaScript"
+            />
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <img class="img-fluid" src="images/python.png" alt="Python" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <img
+              class="img-fluid"
+              src="images/sql-server.png"
+              alt="SQL Server"
+            />
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <img class="img-fluid" src="images/django2.png" alt="Django" />
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <img class="img-fluid" src="images/java.png" alt="Java" />
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <img class="img-fluid" src="images/spring2.png" alt="Spring" />
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <img class="img-fluid" src="images/mongodb.png" alt="MongoDB" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="projects" class="container-fluid bg-3 text-center">
+      <h3 class="heading">Projects</h3>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-sm">
+          <p>Stock Wave</p>
+          <br />
+          <a
+            href="https://github.com/aescudero24/unit_project_u4.git"
+            target="_blank"
+          >
+            <img
+              src="images/stock2.png"
+              class="img-fluid project-image"
+              alt="Image"
+            />
+          </a>
+        </div>
+        <div class="col-sm">
+          <p>Code Chronicles</p>
+          <br />
+          <a
+            href="https://github.com/aescudero24/unit_project_u5.git"
+            target="_blank"
+          >
+            <img
+              src="images/mystery2.png"
+              class="img-fluid project-image"
+              alt="Image"
+            />
+          </a>
+        </div>
+        <div class="col-sm">
+          <p>BCCA Library</p>
+          <br />
+          <a
+            href="https://github.com/BaseCampCoding/django-unit-6-module-2-auth-aescudero24.git"
+            target="_blank"
+          >
+            <img
+              src="images/libros.png"
+              class="img-fluid project-image"
+              alt="Image"
+            />
+          </a>
+        </div>
+        <!-- <div class="col-sm-3">
+          <p>Description</p>
+          <img
+            src="https://placehold.it/150x80?text=IMAGE"
+            class="img-fluid project-image"
+            alt="Image"
+          />
+        </div> -->
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md">
+            <h5>Contact Me</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.linkedin.com/in/adrian-escudero-a5336a27b/"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/1VhK_zrtKZcAgZrBOpEfnDostqhjmcX5Enj_lenSgH5I/edit?usp=sharing"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <h5>Explore</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#me">About Me</a></li>
+              <li><a href="#skills">My Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </footer>
   </body>
 </html>
