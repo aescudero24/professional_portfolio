@@ -8,6 +8,9 @@ body {
   color: #343a40;
   margin: 0;
 }
+.custom-bg-dark {
+  background-color: #343a40;
+}
 .bg-3 {
   background-color: #f8f9fa;
   padding: 60px;
@@ -24,9 +27,12 @@ body.dark-mode .bg-3 {
   background-color: #333;
   color: #fff;
 }
-.dark-mode{
+.dark-mode {
   background-color: #333;
   color: #fff;
+}
+.dark-card {
+  background-color: #343a40 !important;
 }
 #themeSwitchBtn {
   margin-left: auto;
@@ -60,12 +66,26 @@ body.dark-mode .bg-3 {
   text-align: justify;
   border-left: 2px solid #dc3545;
 }
+.card {
+  padding: 20px;
+  height: 100%;
+}
+.card-img-top {
+  height: 50;
+  object-fit: contain;
+}
 .img-fluid:hover {
   cursor: pointer;
 }
 .img-fluid:active {
   transform: scale(0.9);
 }
+/* .project-name {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 2px solid #dc3545;
+  border-bottom: 2px solid #dc3545;
+} */
 .project-image {
   width: 200px;
 }

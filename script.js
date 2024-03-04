@@ -27,6 +27,14 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", function () {
   function toggleTheme() {
     document.body.classList.toggle("dark-mode");
+    toggleCardTheme();
+  }
+
+  function toggleCardTheme() {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      card.classList.toggle("dark-card");
+    });
   }
 
   const themeSwitchBtn = document.createElement("button");
